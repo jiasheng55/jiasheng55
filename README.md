@@ -1,6 +1,6 @@
 # 联系方式
-- jiasheng55@gmail.com
-- https://www.linkedin.com/in/wangjiasheng
+- [jiasheng55@gmail.com](mailto:jiasheng55@gmail.com)
+- [Linkedin](https://www.linkedin.com/in/wangjiasheng)
 
 # <u>技术分享</u>
  - [Flink Forward Asia 2020 - Flink在小米的平台化实践](https://developer.aliyun.com/topic/ffa2020/live)
