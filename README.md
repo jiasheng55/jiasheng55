@@ -1,10 +1,12 @@
 ## README
 
 ## 公众号：胜同学思考笔记
-![](media/16825965094682/16825976601785.jpg)
+![](media/16825965094682/wechat.jpg)
 
 
 ## 历史文章
+
+- **推荐：[大模型催生新的热门职业：AI Engineer](https://mp.weixin.qq.com/s/WV_N0VhOKsMLPZMP6jRKPw)**
 
 - **推荐：[第二大脑｜如何打造All-in-One的信息和任务管理系统 - 实践篇](https://mp.weixin.qq.com/s/PGM2YEsgjepq2WsDaTE6AA)**
 
