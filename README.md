@@ -1,7 +1,7 @@
 ## README
 
 ## 公众号：胜同学思考笔记
-![](media/16825965094682/wechat.jpg)
+![](media/wechat.jpg)
 
 
 ## 历史文章
