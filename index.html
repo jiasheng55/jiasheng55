@@ -1,444 +1,440 @@
 <!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>@charset "UTF-8";
-  * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    min-width: 200px;
-    max-width: 760px;
-    margin: 0 0.8em;
-    padding: 1em;
-    font-family:  LXGW WenKai Screen R, -apple-system-font,BlinkMacSystemFont, Helvetica Neue, PingFang SC, Hiragino Sans GB , Microsoft YaHei UI , Microsoft YaHei ,Arial,sans-serif;
-    color: #3f3f3f;
-    font-size: 15px;
-    line-height: 1.9em;
-    letter-spacing: 0.8px;
-    word-break: break-all;
-  }
-  
-  /* 主题自定义 */
-  blockquote {
-      text-align: left;
-      line-height: 1.75;
-      font-size: 15px;
-      font-style: normal;
-      border-left: none;
-      padding: 1em;
-      border-radius: 8px;
-      color: rgba(0,0,0,0.5);
-      background: #f7f7f7;
-      margin: 2em 8px;
-  }
-  
-  strong {
-    color: rgba(142, 41, 97, 1);
-  }
-  
-  code, a {
-    color:  rgba(142, 41, 97, 1);
-  }
-  
-  a {
-    border-color: #667eea;
-  }
-  
-  code {
-    background-color: #f7f7f7;
-    padding: 0.1em 0.3em;
-  }
-  
-  blockquote, details, dl, ol, p, pre, table, ul {
-    margin-bottom: 1rem;
-  }
-  
-  ol {
-    list-style: decimal;
-  }
-  
-  ul {
-    list-style: disc;
-  }
-  
-  ol, ul {
-    padding-left: 2em;
-  }
-  
-  h1 {
-    border-top-width: 0px;
-    border-right-width: 0px;
-    font-weight: 500;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    padding-left: 0.75rem;
-  }
-  
-  h2 {
-    text-align: center;
-    line-height: 1.75;
-    font-size: 16.5px;
-    font-weight: 500;
-    display: table;
-    margin: 4em auto 2em;
-    padding: 0.1em 0.3em;
-    background: rgba(142, 41, 97, 1);
-    color: #fff;
-  }
-  
-  h3 {
-      text-align: left;
-      line-height: 1.2;
-      font-size: 15.5px;
-      font-weight: 500;
-      margin: 2em 8px 0.75em 0;
-      padding-left: 8px;
-      border-left: 3px solid rgba(142, 41, 97, 1);
-      color: #3f3f3f;
-  }
-  
-  
-  blockquote {
-      text-align: left;
-      line-height: 1.75;
-      font-size: 1em;
-      letter-spacing: 0.1em;
-      color: rgb(80, 80, 80);
-      display: block;
-  }
-  
-  blockquote > :last-child {
-    margin-bottom: 0;
-  }
-  
-  blockquote > :first-child {
-    margin-top: 0;
-  }
-  
-  strong {
-    font-weight: bold;
-  }
-  
-  code, a {
-    font-weight: 500;
-  }
-  
-  code, a {
-    font-size: unset;
-  }
-  
-  a {
-    text-decoration: none;
-    border-bottom: 1px solid;
-  }
-  
-  .footnote-ref {
-    border-width: 0px;
-  }
-  
-  code {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  }
-  
-  
-  pre > code {
-    font-weight: 400;
-    color: unset;
-    line-height: 1.6;
-  }
-  
-  picture img {
-    border-radius: 6px;
-    display: block;
-    margin: 10px auto;
-    -o-object-fit: contain;
-    object-fit: contain;
-    box-shadow: 2px 4px 7px #999;
-  }
-  
-  img {
-    max-width: 100%;
-    display: block;
-    margin: 10px auto;
-    object-fit: contain;
-    border-radius: 6px;
-    box-shadow: 2px 4px 7px #999;
-  }
-  
-  picture {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 6px;
-    margin-bottom: 6px;
-  }
-  
-  pre, pre code[class*=language-] {
-    display: block;
-    overflow-x: auto;
-    padding: 0;
-    /* color: #abb2bf; */
-  }
-  
-  pre code[class*=language-] {
-    padding: 12px;
-    padding-top: 6px;
-  }
-  
-  pre::before {
-    content: "";
-    display: block;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDU0IDE0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMSkiPgogICAgPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNGRjVGNTYiIHN0cm9rZT0iI0UwNDQzRSIgc3Ryb2tlLXdpZHRoPSIuNSIvPgogICAgPGNpcmNsZSBjeD0iMjYiIGN5PSI2IiByPSI2IiBmaWxsPSIjRkZCRDJFIiBzdHJva2U9IiNERUExMjMiIHN0cm9rZS13aWR0aD0iLjUiLz4KICAgIDxjaXJjbGUgY3g9IjQ2IiBjeT0iNiIgcj0iNiIgZmlsbD0iIzI3QzkzRiIgc3Ryb2tlPSIjMUFBQjI5IiBzdHJva2Utd2lkdGg9Ii41Ii8+CiAgPC9nPgo8L3N2Zz4K");
-    height: 30px;
-    width: 100%;
-    margin-bottom: -7px;
-    background-size: 40px;
-    background-repeat: no-repeat;
-    /* border-radius: 5px; */
-    /* background-color: #282c34; */
-    /* background-position: 10px 10px; */
-  }
-  
-  .svg-markmap-box {
-    min-height: 20rem;
-    width: 100%;
-  }
-  
-  .footnotes {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-  
-  /* 布局 end */
-  /* prism-js 样式 */
-  /* PrismJS 1.23.0
-  https://prismjs.com/download.html#themes=prism-okaidia&languages=markup+css+clike+javascript */
-  /**
-   * okaidia theme for JavaScript, CSS and HTML
-   * Loosely based on Monokai textmate theme by http://www.monokai.nl/
-   * @author ocodia
-   */
-  code[class*=language-],
-  pre[class*=language-] {
-    color: #f8f8f2;
-    background: none;
-    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-    font-size: 1em;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1em 5px !important;
+  padding: 2px;
+  font-size: 16px;
+  line-height: 1.8em;
+  letter-spacing: 0.03px;
+}
+
+p {
+  margin: 1em 5px !important;
+  padding: 2px;
+  font-size: 16px;
+  line-height: 1.8em;
+  letter-spacing: 0.03px;
+}
+
+
+blockquote {
     text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
-    word-wrap: normal;
-    line-height: 1.5;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
-    tab-size: 4;
-    -webkit-hyphens: none;
-    -moz-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
-  }
-  
-  /* Code blocks */
-  pre[class*=language-] {
-    padding: 1em;
-    margin: 0.5em 0;
-    overflow: auto;
-    border-radius: 6px;
-  }
-  
-  :not(pre) > code[class*=language-],
-  pre[class*=language-] {
-    background: #272822;
-  }
-  
-  
-  /* Inline code */
-  :not(pre) > code[class*=language-] {
-    padding: 0.1em;
-    border-radius: 0.3em;
-    white-space: normal;
-  }
-  
-  .token.comment,
-  .token.prolog,
-  .token.doctype,
-  .token.cdata {
-    color: #8292a2;
-  }
-  
-  .token.punctuation {
-    color: #f8f8f2;
-  }
-  
-  .token.namespace {
-    opacity: 0.7;
-  }
-  
-  .token.property,
-  .token.tag,
-  .token.constant,
-  .token.symbol,
-  .token.deleted {
-    color: #f92672;
-  }
-  
-  .token.boolean,
-  .token.number {
-    color: #ae81ff;
-  }
-  
-  .token.selector,
-  .token.attr-name,
-  .token.string,
-  .token.char,
-  .token.builtin,
-  .token.inserted {
-    color: #a6e22e;
-  }
-  
-  .token.operator,
-  .token.entity,
-  .token.url,
-  .language-css .token.string,
-  .style .token.string,
-  .token.variable {
-    color: #f8f8f2;
-  }
-  
-  .token.atrule,
-  .token.attr-value,
-  .token.function,
-  .token.class-name {
-    color: #e6db74;
-  }
-  
-  .token.keyword {
-    color: #66d9ef;
-  }
-  
-  .token.regex,
-  .token.important {
-    color: #fd971f;
-  }
-  
-  .token.important,
-  .token.bold {
+    line-height: 1.75;
+    font-size: 15px;
+    font-style: normal;
+    border-left: none;
+    padding: 0.5em;
+    border-radius: 8px;
+    color: rgba(0,0,0,0.5);
+    background: #f7f7f7;
+    margin: 2em 8px;
+}
+
+strong {
+  color: rgba(142, 41, 97, 1);
+}
+
+code, a {
+  color:  rgba(142, 41, 97, 1);
+}
+
+a {
+  border-color: #667eea;
+}
+
+code {
+  background-color: #f7f7f7;
+  padding: 0.1em 0.3em;
+}
+
+blockquote, details, dl, ol, p, pre, table, ul {
+  margin-bottom: 1rem;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol, ul {
+  padding-left: 2em;
+}
+
+h1 {
+  border-top-width: 0px;
+  border-right-width: 0px;
+  font-weight: bold;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.75rem;
+}
+
+h2 {
+  text-align: center;
+  line-height: 1.75;
+  font-size: 20px;
+  font-weight: bold;
+  display: table;
+  margin: 4em auto 2em;
+  padding: 0.1em 0.3em;
+  background: rgba(142, 41, 97, 1);
+  color: #fff;
+}
+
+h3 {
+    text-align: left;
+    line-height: 1.2;
+    font-size: 18px;
     font-weight: bold;
-  }
-  
-  .token.italic {
-    font-style: italic;
-  }
-  
-  .token.entity {
-    cursor: help;
-  }
-  
-  /* prism-js end */</style> <style>.mweb-charts{background:#fff;}
-  body{ box-sizing: border-box;
-      margin: 0 auto;
-      padding: 28px}
-  @media print{
-      pre, code, pre code {
-       overflow: visible !important;
-       white-space: pre-wrap !important;       /* css-3 */
-       white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
-       white-space: -pre-wrap !important;      /* Opera 4-6 */
-       white-space: -o-pre-wrap !important;    /* Opera 7 */
-       word-wrap: break-word !important;       /* Internet Explorer 5.5+ */
-      }
-      html,body{margin:0;padding:4px;}
-  }
-  
-  
-  
-  div.code-toolbar {
-    position: relative;
-  }
-  
-  div.code-toolbar > .toolbar {
-    position: absolute;
-    z-index: 10;
-    top: .3em;
-    right: .2em;
-    transition: opacity 0.3s ease-in-out;
-    opacity: 0;
-  }
-  
-  div.code-toolbar:hover > .toolbar {
-    opacity: 1;
-  }
-  
-  /* Separate line b/c rules are thrown out if selector is invalid.
-     IE11 and old Edge versions don't support :focus-within. */
-  div.code-toolbar:focus-within > .toolbar {
-    opacity: 1;
-  }
-  
-  div.code-toolbar > .toolbar > .toolbar-item {
-    display: inline-block;
-  }
-  
-  div.code-toolbar > .toolbar > .toolbar-item > a {
-    cursor: pointer;
-  }
-  
-  div.code-toolbar > .toolbar > .toolbar-item > button {
-    background: none;
-    border: 0;
-    color: inherit;
-    font: inherit;
-    line-height: normal;
-    overflow: visible;
-    padding: 0;
-    -webkit-user-select: none; /* for button */
-    -moz-user-select: none;
-    -ms-user-select: none;
-  }
-  
-  div.code-toolbar > .toolbar > .toolbar-item > a,
-  div.code-toolbar > .toolbar > .toolbar-item > button,
-  div.code-toolbar > .toolbar > .toolbar-item > span {
-    color: inherit;
-    font-size: .8em;
-    padding: 4px .5em;
-    background: #f5f2f0;
-    background: rgba(224, 224, 224, 0.4);
-    box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
-    border-radius: .5em;
-  }
-  
-  div.code-toolbar > .toolbar > .toolbar-item > a:hover,
-  div.code-toolbar > .toolbar > .toolbar-item > a:focus,
-  div.code-toolbar > .toolbar > .toolbar-item > button:hover,
-  div.code-toolbar > .toolbar > .toolbar-item > button:focus,
-  div.code-toolbar > .toolbar > .toolbar-item > span:hover,
-  div.code-toolbar > .toolbar > .toolbar-item > span:focus {
-    color: inherit;
-    text-decoration: none;
-  }
-  </style><script>window.MathJax = {     tex: { tags: 'ams', inlineMath: [ ['$','$'], ['\\(','\\)'] ] },     startup: {     pageReady() {       return MathJax.startup.defaultPageReady().then(function () {          window.mweb_mathjax_ready_val = 'yes';          if(window.mweb_mathjax_ready !== undefined){ mweb_mathjax_ready(); }       });     }   }};document.addEventListener('DOMContentLoaded', function(event) {    if (typeof Prism != 'undefined') {         Prism.highlightAll();     }});window.mweb_mathjax_ready_val = '';function theMWebMathJaxRenderIsReady(key){ return window.mweb_mathjax_ready_val; }</script><script>document.addEventListener('DOMContentLoaded', function(event) {window.mweb_mathjax_ready_val = 'yes';})</script></head><body><div id='markdown_content' class='markdown-body'><h2><a id="%E5%85%AC%E4%BC%97%E5%8F%B7%EF%BC%9A%E8%83%9C%E5%90%8C%E5%AD%A6%E6%80%9D%E8%80%83%E7%AC%94%E8%AE%B0" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>公众号：胜同学思考笔记</h2>
-  <p><img src="media/wechat.jpg" alt="" /></p>
-  <h2><a id="%E5%8E%86%E5%8F%B2%E6%96%87%E7%AB%A0" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>历史文章</h2>
-  <ul>
-  <li>
-  <p><strong>推荐：<a href="https://mp.weixin.qq.com/s/WV_N0VhOKsMLPZMP6jRKPw">大模型催生新的热门职业：AI Engineer</a></strong></p>
-  </li>
-  <li>
-  <p><strong>推荐：<a href="https://mp.weixin.qq.com/s/PGM2YEsgjepq2WsDaTE6AA">第二大脑｜如何打造All-in-One的信息和任务管理系统 - 实践篇</a></strong></p>
-  </li>
-  <li>
-  <p><strong><a href="https://mp.weixin.qq.com/s/b3d2PWCvZ2P4LgY6wr8Oaw">第二大脑｜如何打造All-in-One的信息和任务管理系统 - 理论篇</a></strong></p>
-  </li>
-  <li>
-  <p><a href="https://mp.weixin.qq.com/s/AGHoDOSzItlUIwJ7kOmOmg">YouTube分享 | 80岁的人最后悔的事情是什么？</a></p>
-  </li>
-  <li>
-  <p><strong>推荐：<a href="https://mp.weixin.qq.com/s/eewBwKvoJBx6P2lhMnXZnA">读《原则》&amp;《纳瓦尔宝典》| 如何做出高质量的决策</a></strong></p>
-  </li>
-  <li>
-  <p><a href="https://mp.weixin.qq.com/s/a0K_F9VJLc9wglc8cJ1Zzg">TED分享 | 如何设计你想要的人生</a></p>
-  </li>
-  </ul>
-  </div></body></html>
+    margin: 2em 8px 0.75em 0;
+    padding-left: 8px;
+    border-left: 3px solid rgba(142, 41, 97, 1);
+    color: rgba(142, 41, 97, 1);
+}
+
+
+blockquote {
+    text-align: left;
+    line-height: 1.75;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    color: rgb(80, 80, 80);
+    display: block;
+}
+
+blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+blockquote > :first-child {
+  margin-top: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+code, a {
+  font-weight: 500;
+}
+
+code, a {
+  font-size: unset;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.footnote-ref {
+  border-width: 0px;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+
+pre > code {
+  font-weight: 400;
+  color: unset;
+  line-height: 1.6;
+}
+
+picture img {
+  border-radius: 6px;
+  display: block;
+  margin: 10px auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+  box-shadow: 2px 4px 7px #999;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 10px auto;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 2px 4px 7px #999;
+}
+
+picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+pre, pre code[class*=language-] {
+  display: block;
+  overflow-x: auto;
+  padding: 0;
+  /* color: #abb2bf; */
+}
+
+pre code[class*=language-] {
+  padding: 12px;
+  padding-top: 6px;
+}
+
+pre::before {
+  content: "";
+  display: block;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDU0IDE0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMSkiPgogICAgPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNGRjVGNTYiIHN0cm9rZT0iI0UwNDQzRSIgc3Ryb2tlLXdpZHRoPSIuNSIvPgogICAgPGNpcmNsZSBjeD0iMjYiIGN5PSI2IiByPSI2IiBmaWxsPSIjRkZCRDJFIiBzdHJva2U9IiNERUExMjMiIHN0cm9rZS13aWR0aD0iLjUiLz4KICAgIDxjaXJjbGUgY3g9IjQ2IiBjeT0iNiIgcj0iNiIgZmlsbD0iIzI3QzkzRiIgc3Ryb2tlPSIjMUFBQjI5IiBzdHJva2Utd2lkdGg9Ii41Ii8+CiAgPC9nPgo8L3N2Zz4K");
+  height: 30px;
+  width: 100%;
+  margin-bottom: -7px;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  /* border-radius: 5px; */
+  /* background-color: #282c34; */
+  /* background-position: 10px 10px; */
+}
+
+.svg-markmap-box {
+  min-height: 20rem;
+  width: 100%;
+}
+
+.footnotes {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+code[class*=language-],
+pre[class*=language-] {
+  color: #f8f8f2;
+  background: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*=language-] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+  border-radius: 6px;
+}
+
+:not(pre) > code[class*=language-],
+pre[class*=language-] {
+  background: #272822;
+}
+
+
+/* Inline code */
+:not(pre) > code[class*=language-] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #8292a2;
+}
+
+.token.punctuation {
+  color: #f8f8f2;
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+  color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+  color: #e6db74;
+}
+
+.token.keyword {
+  color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+  color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}</style> <style>.mweb-charts{background:#fff;}
+body{ box-sizing: border-box;
+    margin: 0 auto;
+    padding: 28px}
+@media print{
+    pre, code, pre code {
+     overflow: visible !important;
+     white-space: pre-wrap !important;       /* css-3 */
+     white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+     white-space: -pre-wrap !important;      /* Opera 4-6 */
+     white-space: -o-pre-wrap !important;    /* Opera 7 */
+     word-wrap: break-word !important;       /* Internet Explorer 5.5+ */
+    }
+    html,body{margin:0;padding:4px;}
+}
+
+
+
+div.code-toolbar {
+  position: relative;
+}
+
+div.code-toolbar > .toolbar {
+  position: absolute;
+  z-index: 10;
+  top: .3em;
+  right: .2em;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+div.code-toolbar:hover > .toolbar {
+  opacity: 1;
+}
+
+/* Separate line b/c rules are thrown out if selector is invalid.
+   IE11 and old Edge versions don't support :focus-within. */
+div.code-toolbar:focus-within > .toolbar {
+  opacity: 1;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item {
+  display: inline-block;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a {
+  cursor: pointer;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-user-select: none; /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a,
+div.code-toolbar > .toolbar > .toolbar-item > button,
+div.code-toolbar > .toolbar > .toolbar-item > span {
+  color: inherit;
+  font-size: .8em;
+  padding: 4px .5em;
+  background: #f5f2f0;
+  background: rgba(224, 224, 224, 0.4);
+  box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
+  border-radius: .5em;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a:hover,
+div.code-toolbar > .toolbar > .toolbar-item > a:focus,
+div.code-toolbar > .toolbar > .toolbar-item > button:hover,
+div.code-toolbar > .toolbar > .toolbar-item > button:focus,
+div.code-toolbar > .toolbar > .toolbar-item > span:hover,
+div.code-toolbar > .toolbar > .toolbar-item > span:focus {
+  color: inherit;
+  text-decoration: none;
+}
+</style><script>window.MathJax = {     tex: { tags: 'ams', inlineMath: [ ['$','$'], ['\\(','\\)'] ] },     startup: {     pageReady() {       return MathJax.startup.defaultPageReady().then(function () {          window.mweb_mathjax_ready_val = 'yes';          if(window.mweb_mathjax_ready !== undefined){ mweb_mathjax_ready(); }       });     }   }};document.addEventListener('DOMContentLoaded', function(event) {    if (typeof Prism != 'undefined') {         Prism.highlightAll();     }});window.mweb_mathjax_ready_val = '';function theMWebMathJaxRenderIsReady(key){ return window.mweb_mathjax_ready_val; }</script><script>document.addEventListener('DOMContentLoaded', function(event) {window.mweb_mathjax_ready_val = 'yes';})</script></head><body><div id='markdown_content' class='markdown-body'><h2><a id="readme" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>README</h2>
+<h2><a id="%E5%85%AC%E4%BC%97%E5%8F%B7%EF%BC%9A%E8%83%9C%E5%90%8C%E5%AD%A6%E6%80%9D%E8%80%83%E7%AC%94%E8%AE%B0" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>公众号：胜同学思考笔记</h2>
+<p><img src="media/wechat.jpg" alt="" /></p>
+<h2><a id="%E5%8E%86%E5%8F%B2%E6%96%87%E7%AB%A0" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>历史文章</h2>
+<ul>
+<li>
+<p><strong><a href="https://mp.weixin.qq.com/s/MWJQRY8uQci1aFhy_2k9Ng">如何轻松养成好习惯？</a></strong></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/WV_N0VhOKsMLPZMP6jRKPw">大模型催生新的热门职业：AI Engineer</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/PGM2YEsgjepq2WsDaTE6AA">第二大脑｜如何打造All-in-One的信息和任务管理系统 - 实践篇</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/b3d2PWCvZ2P4LgY6wr8Oaw">第二大脑｜如何打造All-in-One的信息和任务管理系统 - 理论篇</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/AGHoDOSzItlUIwJ7kOmOmg">YouTube分享 | 80岁的人最后悔的事情是什么？</a></p>
+</li>
+<li>
+<p><strong><a href="https://mp.weixin.qq.com/s/eewBwKvoJBx6P2lhMnXZnA">读《原则》&amp;《纳瓦尔宝典》| 如何做出高质量的决策</a></strong></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/a0K_F9VJLc9wglc8cJ1Zzg">TED分享 | 如何设计你想要的人生</a></p>
+</li>
+</ul>
+</div></body></html>
