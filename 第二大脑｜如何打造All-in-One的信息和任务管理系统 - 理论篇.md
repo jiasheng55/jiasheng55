@@ -20,7 +20,7 @@ share: "true"
 我是从去年5月开始接触并实践P.A.R.A方法的，到今天大概用了近一年了，感觉对我的帮助还是比较大的。
 
 P.A.R.A是Tiago Forte提出的一套信息和任务管理的理论。Tiago Forte是个人生产效率专家，他的相关课程影响范围比较广。他希望能够通过这个方法打造个人的第二大脑，帮助个人在生活和工作中得到更好的发展。
-![](16810877124230.jpg)
+![](./assets/16810877124230.jpg)
 *Picture by Tiago Forte*
 
 P.A.R.A分别代表Project、Area、Resource、Archive，我们拆开讲一下它们的含义和用途。
@@ -68,7 +68,7 @@ Area也可以归档，但是Area一般变动不是很频繁。如果频繁归档
 通过定期盘点梳理Project和Resouce，把信息进行归档，和收拾房间、打扫卫生类似。整洁条理的环境，可以帮助我们保持愉悦的心情，专注在最重要的事情上面。
 
 ### 内在关系
-![](16811754682837.jpg)
+![](./assets/16811754682837.jpg)
 *Picture by Thomas Frank*
 
 上图是另外一位分享P.A.R.A的Youtube博主绘制的示意图，他添加了几个元素，包括和Project相关的Goal/Milestones/Tasks，以及和Resource相关的Notes。核心的内在关系和我们上面提到的基本是一致的，主要是Project和Resource对于Area的支撑关系，一个是提升Area的行动，一个是提升Area的资源（或者说一个是实践支撑，一个是理论支撑）。
