@@ -12,7 +12,7 @@ share: "true"
 
 因此，以大模型服务提供的 API 为界，逐步划分为了大模型的生产者和使用者：
 
-![](16912262843392.jpg)
+![](./assets/16912262843392.jpg)
 *（图片源自《The Rise of the AI Engineer》）*
 
 API 左侧是 ML Researcher 和 ML Engineer，主要的工作是模型的训练和推理，最终的产出是大模型服务，并以 API 的方式提供出去。
@@ -33,11 +33,11 @@ Prompt Engineer 主要关注的是调优 Prompt，以使大模型 API 返回的�
 ML Engineer 有很大的精力是在训练特定领域的模型上，这个过程包括了繁杂的数据收集处理工作、模型训练、评估、推理工作；整个过程非常的复杂，迭代成本也比较高。
 而 AI Engineer 的工作流程则有点“相反”，他们为了验证产品上的想法，先把一些尝试性的 Prompt 提供给大模型，验证有效之后再收集更多的数据对大模型进行微调，以获得更适合自己业务场景的大模型能力。这一流程显然迭代成本更低、迭代效率更高。
 
-![](16912299480181.jpg)
+![](./assets/16912299480181.jpg)
 *（图片源自《The Rise of the AI Engineer》）*
 
 ### Andrej Karpathy@OpenAI 的回应
-![](16912301943581.jpg)
+![](./assets/16912301943581.jpg)
 
 除了我们上面提到AI Engineer 和 Prompt Engineer、ML Engineer 的差异，Andrej Karpathy 也提到了，AI Engineer 的数量将会远远超过 ML Engineer 的数量。
 
